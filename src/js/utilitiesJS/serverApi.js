@@ -8,7 +8,7 @@ class ServerApi {
   language = 'en-US';
   trend = 'week';
 
-  KEY = `api_key=7770a554235a470dd8487676c4d97407`;
+  KEY = `api_key=6e8679ed7a6c50e5b0edb7fbe9be275d`;
   baseUrl = `https://api.themoviedb.org/3`;
   baseSrc = `https://image.tmdb.org/t/p/w500`;
 

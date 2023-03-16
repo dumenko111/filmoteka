@@ -1,10 +1,10 @@
 // import * as basicLightbox from 'basiclightbox';
 
 import { serverApi } from './utilitiesJS/serverApi';
-import { spinnerPlay, spinnerStop } from './spinner';
+// import { spinnerPlay, spinnerStop } from './spinner';
 
-export const handleClick = async () => {
-  spinnerPlay();
+// export const handleClick = async () => {
+//   spinnerPlay();
 
   const movieDescriptionId = document.querySelector('.movie__description');
   const trailerId = movieDescriptionId.dataset.movieId;
@@ -17,7 +17,7 @@ export const handleClick = async () => {
       }
     });
 
-    spinnerStop();
+    // spinnerStop();
 
     const instance = basicLightbox.create(`
         <div class="player-container">
@@ -29,4 +29,4 @@ export const handleClick = async () => {
 
     instance.show();
   });
-};
+;

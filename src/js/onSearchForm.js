@@ -3,12 +3,12 @@
 
 import { refs } from './utilitiesJS/refs';
 import { serverApi } from './utilitiesJS/serverApi';
-import { options } from './pagination';
+// import { options } from './pagination';
 import {
   murkupGalleryOnPageLoading,
   murkupGallery,
 } from './utilitiesJS/murkupGalleryOnPageLoading';
-import { spinnerPlay, spinnerStop } from './spinner';
+// import { spinnerPlay, spinnerStop } from './spinner';
 
 let searchQuery = ' ';
 refs.formRef.addEventListener('submit', onSubmitClick);
@@ -16,7 +16,7 @@ refs.formRef.addEventListener('submit', onSubmitClick);
 async function onSubmitClick(event) {
   event.preventDefault();
 
-  spinnerPlay();
+  // spinnerPlay();
 
   const inputRef = document.querySelector('.header__form-input');
   inputRef.addEventListener('change', () => {
@@ -35,22 +35,22 @@ async function onSubmitClick(event) {
       borderRadius: '25px',
       clickToClose: true,
     });
-    spinnerStop();
+    // spinnerStop();
     return;
   }
 
   await murkupSearchMovie();
 
-  spinnerStop();
+  // spinnerStop();
 
-  const pagination = new Pagination(refs.tuiContainer, options);
+  // const pagination = new Pagination(refs.tuiContainer, options);
 
-  pagination.on('beforeMove', event => {
-    const currentPage = event.page;
-    serverApi.setPage(currentPage);
-    serverApi.incrementRequestCount();
-    murkupSearchMovie();
-  });
+  // pagination.on('beforeMove', event => {
+  //   const currentPage = event.page;
+  //   serverApi.setPage(currentPage);
+  //   serverApi.incrementRequestCount();
+  //   murkupSearchMovie();
+  // });
 }
 
 export async function murkupSearchMovie() {

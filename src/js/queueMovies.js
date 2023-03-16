@@ -1,7 +1,7 @@
 // import Pagination from 'tui-pagination';
 
 import { refs } from './utilitiesJS/refs';
-import { options } from './pagination';
+// import { options } from './pagination';
 import { createMessage } from './utilitiesJS/createEmptyLibMessage';
 import { murkupGallery } from './utilitiesJS/markupGllery';
 
@@ -31,13 +31,13 @@ export function onBtnQueueClick() {
       refs.tuiContainer.classList.remove('visually-hidden');
       murkupGallery(queue.slice(start, end));
 
-      const pagination = new Pagination(refs.tuiContainer, options);
+      // const pagination = new Pagination(refs.tuiContainer, options);
 
-      pagination.on('beforeMove', event => {
-        const currentPage = event.page;
-        handleSlice(currentPage);
-        murkupGallery(queue.slice(start, end));
-      });
+      // pagination.on('beforeMove', event => {
+      //   const currentPage = event.page;
+      //   handleSlice(currentPage);
+      //   murkupGallery(queue.slice(start, end));
+      // });
     }
   } catch (error) {
     console.log(error.message);

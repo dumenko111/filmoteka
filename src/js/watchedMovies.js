@@ -5,7 +5,7 @@ import { movieDescriptionMurkup } from './descriptionMurkup';
 import { serverApi } from './utilitiesJS/serverApi';
 import { onAddQueueClick, onAddWatchClick } from './addFavorites';
 import { closeModal, onOpenModal } from './modal';
-import { options } from './pagination';
+// import { options } from './pagination';
 import {
   makeQueueTextContent,
   makeWatchTextContent,
@@ -39,13 +39,13 @@ export function onBtnWatchedClick() {
 
       refs.tuiContainer.classList.remove('visually-hidden');
       murkupGallery(watched.slice(start, end));
-      const pagination = new Pagination(refs.tuiContainer, options);
+      // const pagination = new Pagination(refs.tuiContainer, options);
 
-      pagination.on('beforeMove', event => {
-        const currentPage = event.page;
-        handleSlice(currentPage);
-        murkupGallery(watched.slice(start, end));
-      });
+      // pagination.on('beforeMove', event => {
+      //   const currentPage = event.page;
+      //   handleSlice(currentPage);
+      //   murkupGallery(watched.slice(start, end));
+      // });
     }
   } catch (error) {
     console.log(error.message);
