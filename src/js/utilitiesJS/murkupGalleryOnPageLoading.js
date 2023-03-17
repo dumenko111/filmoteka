@@ -1,20 +1,21 @@
-// import Pagination from 'tui-pagination';
+import Pagination from 'tui-pagination';
 
 import { refs } from './refs';
 import { serverApi } from './serverApi';
 import { posterСheck } from './posterCheck';
-// import { options } from '../pagination';
-// import { spinnerPlay, spinnerStop } from '../spinner';
+import { options } from '../pagination';
+import { spinnerPlay, spinnerStop } from '../spinner';
 import { genresArr, genresUK } from './genres';
-// import { spinnerPlay, spinnerStop } from '../spinner';
+import { spinnerPlay, spinnerStop } from '../spinner';
+// import warship from '../../images/warship.jpg';
 
-// const pagination = new Pagination(refs.tuiContainer, options);
+const pagination = new Pagination(refs.tuiContainer, options);
 
-// spinnerPlay(); // ! не пересовувати
+spinnerPlay(); // ! не пересовувати
 
 pagination.on('beforeMove', async event => {
 
-  // spinnerPlay();
+  spinnerPlay();
   pagination.setTotalItems(serverApi.totalResults);
 
   if (refs.trend.value === 'top' || refs.trend.value === 'popular') {
@@ -105,5 +106,5 @@ export async function murkupGallery() {
     console.log(error);
   }
 
-  // spinnerStop();
+  spinnerStop();
 }

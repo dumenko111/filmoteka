@@ -1,5 +1,5 @@
-// import axios from 'axios';
-// import Notiflix from 'notiflix';
+import axios from 'axios';
+import Notiflix from 'notiflix';
 
 class ServerApi {
   #page = 1;

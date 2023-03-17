@@ -1,15 +1,15 @@
-// import Notiflix from 'notiflix';
-// import { initializeApp } from 'firebase/app';
-// import {
-//   getAuth,
-//   createUserWithEmailAndPassword,
-//   signInWithEmailAndPassword,
-//   signOut,
-//   onAuthStateChanged,
-// } from 'firebase/auth';
-// import { getDatabase, ref, set, update } from 'firebase/database';
-// import { refs } from './utilitiesJS/refs';
-// import closeModal from './modal-login';
+import Notiflix from 'notiflix';
+import { initializeApp } from 'firebase/app';
+import {
+  getAuth,
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+  signOut,
+  onAuthStateChanged,
+} from 'firebase/auth';
+import { getDatabase, ref, set, update } from 'firebase/database';
+import { refs } from './utilitiesJS/refs';
+import closeModal from './modal-login';
 
 const firebaseConfig = {
   apiKey: 'AIzaSyAr9PnJjkOaXP4O6n2hAHTbJJCMzH43B44',

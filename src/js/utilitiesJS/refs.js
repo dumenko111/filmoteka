@@ -30,7 +30,7 @@ export const refs = {
   scrollBtn: document.querySelector('.is-show'),
   scollIcon: document.querySelector('.scroll-top__icon'),
 
-  // spinner: document.querySelector('.js-spinner'),
+  spinner: document.querySelector('.js-spinner'),
   load: document.querySelector('[data-load]'),
   backdrop: document.querySelector('.backdrop'),
 
@@ -48,7 +48,7 @@ export const refs = {
   loginedWrapper: document.querySelector('.loginedWrapper'),
   exitBtnFromOnline: document.querySelector('.exitBtnFromOnline'),
 
-  // tuiContainer: document.querySelector('.tui-pagination'),
+  tuiContainer: document.querySelector('.tui-pagination'),
   langValue: document.querySelector('.select__lang'),
 
   trend: document.querySelector('.select__trend'),
