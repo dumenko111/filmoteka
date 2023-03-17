@@ -13,11 +13,7 @@ class ServerApi {
   baseSrc = `https://image.tmdb.org/t/p/w500`;
 
   async getPopularMovie() {
-    const data = await axios({
-      url: `${this.baseUrl}/trending/movie/${this.trend}?${this.KEY}&page=${
-        this.#page
-      }&language=${this.language}`,
-    });
+    const data = await axios({url: `${this.baseUrl}/trending/movie/${this.trend}?${this.KEY}&page=${this.#page}&language=${this.language}`,});
 
     return await data.data;
   }
